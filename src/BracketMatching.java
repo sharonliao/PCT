@@ -27,7 +27,9 @@ public class BracketMatching {
             if(openBrackets.contains(c)){
                 stack.push(c);
             } else if(closeBrackets.contains(c)){
-                if( ! bracketsMap.get(stack.pop()).equals(c)){
+                if(stack.size() == 0){ //check if stack is empty
+                    return  false;
+                } else if( ! bracketsMap.get(stack.pop()).equals(c)){
                     return false;
                 }
 
