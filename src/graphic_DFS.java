@@ -8,7 +8,6 @@ public class graphic_DFS {
     int eNum; // edge number
     int[][]graph = new int[200][200];
     int[] nodes;//
-    boolean visited = false;
     boolean isDAG = true; // Whether it is a directed acyclic graph
 
     public void create(int v,int e){
