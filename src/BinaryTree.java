@@ -317,7 +317,6 @@ public class BinaryTree {
 
         while (num>0){
             // input format : parentName childName
-            scanner = new Scanner(System.in);
             strList.add(scanner.nextLine());
             --num;
         }
@@ -333,11 +332,9 @@ public class BinaryTree {
 
 
         ArrayList<String> relationList = new ArrayList<>();
-        scanner = new Scanner(System.in);
         num = Integer.parseInt(scanner.nextLine());
         while (num>0){
             // input format : parentName childName
-            scanner = new Scanner(System.in);
             relationList.add(scanner.nextLine());
             --num;
         }
